@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //С помощью функции setContentView задаем лайаут activity_main
-        //Когда все отрендерится мы с помощью функции "Найти вью по айди" (findViewById)
+        //Когда все отрендерится мы с помощью функции "Найти вью по айди" (findViewById) находим нуную инфу в лейауте и записывает в соответствующие переменные
         //R это штука, которая возвращает циферки, чтобы андроид понимал айди, т.е. для нас это ер поинтс, а для него циферки
         setContentView(R.layout.activity_main);
         your_points = findViewById(R.id.your_points);
@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         if (common_your >= 100) {
             //Переходим на WinActivity.class т.к. мы выиграли
             //Обнуляем все очки
+            //Intent - абстрактное описание операции, которую необходимо выполнить.
             Intent i = new Intent(this, WinActivity.class);
             your_points.setText("0");
             robot_points.setText("0");

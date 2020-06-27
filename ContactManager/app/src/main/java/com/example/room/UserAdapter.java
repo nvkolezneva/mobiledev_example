@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 //Класс, который связывает данные, которые мы хотим добавить в список, и RecyclerView
+//Элемент RecyclerView предназначен для оптимизации работы со списками и во многом позволяет повысить производительность по сравнению со стандартным ListView.
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
     private Context context;
